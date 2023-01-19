@@ -8,10 +8,8 @@ func main()  {
 	fmt.Println("ENTER THE NO. OF TERMS OF FB SERIES")
 	fmt.Scanln(&n)
 	for i:=0; i<=n-1 ;i++{
-		if (i==0){
-			fmt.Println(a)
-		}
-		if (i==1){
+		if (i==0){fmt.Println(a)
+		}else if (i==1){
 			fmt.Println(b)	
 		}else{
 			c=a+b
@@ -20,4 +18,5 @@ func main()  {
 			fmt.Println(c)
 		}
 	}
+	fmt.Printf("The variable type is %T",a)
 }
